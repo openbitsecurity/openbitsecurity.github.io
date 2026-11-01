@@ -1,36 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="OpenBit Security - Independent cybersecurity advisory and consulting.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="OpenBit Security — independent cybersecurity advisory for growing businesses.">
 <title>OpenBit Security | Cybersecurity Advisory</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#0b1628;color:#fff;font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}
-main{width:100%;max-width:850px;padding:45px 24px}
-.logo{width:76px;height:76px;margin:auto auto 22px;border:2px solid #4ac7c1;border-radius:20px;display:grid;place-items:center;font-size:40px;color:#4ac7c1}
-h1{font-size:clamp(34px,7vw,56px);margin:0 0 10px;letter-spacing:-1.5px}
-.tagline{color:#4ac7c1;letter-spacing:2px;font-size:12px;font-weight:bold}
-hr{border:0;border-top:1px solid #29405a;margin:36px auto;max-width:440px}
-h2{font-size:clamp(22px,4vw,30px);font-weight:500}
-p{color:#c4d0e0;line-height:1.8;font-size:16px}
-.status{display:inline-block;border:1px solid #4ac7c1;color:#4ac7c1;border-radius:30px;padding:10px 25px;margin:24px 0}
-.services{font-size:13px;color:#9eb3c8}
-footer{margin-top:60px;color:#7189a4;font-size:12px}
+:root{color-scheme:dark;--bg:#08172d;--ink:#eaf3ff;--muted:#a9bfd4;--aqua:#22c5e8;--line:#294462}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:radial-gradient(circle at 50% 0%,#183f67 0%,var(--bg) 62%);color:var(--ink);min-height:100vh}.shell{max-width:940px;margin:auto;padding:22px 22px 42px}.top{display:flex;justify-content:flex-end}.lang{background:transparent;border:1px solid #45617d;border-radius:999px;padding:9px 14px;color:white;cursor:pointer;font-size:14px}.lang:focus-visible{outline:3px solid var(--aqua)}main{text-align:center;padding:48px 0 24px}.logo{display:block;width:min(100%,620px);margin:0 auto 35px;border-radius:18px;background:white;padding:12px}.eyebrow{font-size:13px;letter-spacing:.17em;color:#70dded;font-weight:700;text-transform:uppercase}h1{font-size:clamp(30px,5vw,48px);letter-spacing:-.035em;line-height:1.15;margin:16px 0 20px}.intro{max-width:650px;margin:auto;color:var(--muted);font-size:clamp(16px,2vw,19px);line-height:1.7}.pill{display:inline-block;margin:28px 0 22px;padding:10px 20px;border:1px solid #49bbce;border-radius:999px;color:#9beefa;font-weight:650;font-size:14px}.services{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px auto 0;max-width:760px}.service{border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:#c7d7e9;background:#102b47;font-size:14px}footer{text-align:center;border-top:1px solid var(--line);padding-top:22px;color:#819cb6;font-size:13px;margin-top:54px}@media(max-width:600px){main{padding-top:35px}.logo{padding:7px;margin-bottom:30px}.shell{padding:15px 18px 30px}}
 </style>
 </head>
 <body>
-<main>
-<div class="logo">◇</div>
-<h1>OpenBit Security</h1>
-<div class="tagline">OPEN TECHNOLOGY. REAL SECURITY.</div>
-<hr>
-<h2>Cybersecurity Advisory &amp; Consulting</h2>
-<p>Helping businesses build stronger cybersecurity foundations through independent expertise, practical guidance and trusted advisory.</p>
-<div class="status">Coming Soon</div>
-<p class="services">vCISO &nbsp;·&nbsp; Security Assessments &nbsp;·&nbsp; NIS2 Readiness &nbsp;·&nbsp; SOC Advisory</p>
-<footer>© OpenBit Security</footer>
-</main>
-</body>
-</html>
+<div class="shell"><header class="top"><button class="lang" id="language" type="button" aria-label="Change language">HR</button></header>
+<main><img class="logo" src="images/openbit-logo.png" alt="OpenBit Security — Open Technology. Real Security.">
+<div class="eyebrow" data-en="Independent cybersecurity advisory" data-hr="Neovisno savjetovanje o kibernetičkoj sigurnosti">Independent cybersecurity advisory</div>
+<h1 data-en="Practical security for growing businesses." data-hr="Praktična sigurnost za tvrtke koje rastu.">Practical security for growing businesses.</h1>
+<p class="intro" data-en="OpenBit Security is an emerging cybersecurity advisory initiative focused on helping small and medium-sized businesses understand risks, strengthen resilience and make informed security decisions." data-hr="OpenBit Security je inicijativa u razvoju usmjerena na pomoć malim i srednjim tvrtkama u razumijevanju rizika, jačanju otpornosti i donošenju kvalitetnih sigurnosnih odluka.">OpenBit Security is an emerging cybersecurity advisory initiative focused on helping small and medium-sized businesses understand risks, strengthen resilience and make informed security decisions.</p>
+<div class="pill" data-en="Website coming soon" data-hr="Web-stranica u pripremi">Website coming soon</div>
+<div class="services"><span class="service">vCISO</span><span class="service" data-en="Security Assessments" data-hr="Sigurnosne procjene">Security Assessments</span><span class="service" data-en="NIS2 Readiness" data-hr="Priprema za NIS2">NIS2 Readiness</span><span class="service" data-en="SOC Advisory" data-hr="SOC savjetovanje">SOC Advisory</span></div>
+</main><footer>© <span id="year">2026</span> OpenBit Security · Open Technology. Real Security.</footer></div>
+<script>
+const b=document.getElementById('language');let lang='en';b.addEventListener('click',()=>{lang=lang==='en'?'hr':'en';document.documentElement.lang=lang;b.textContent=lang==='en'?'HR':'EN';document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]})});document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
